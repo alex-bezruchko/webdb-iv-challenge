@@ -2,7 +2,7 @@ module.exports = {
     development: {
         client: 'sqlite3',
         connection: {
-            filename: './data/cookbook.db3'
+            filename: './data/cookbook.sqlite3'
         },
         migrations: {
             directory: './data/migrations'
