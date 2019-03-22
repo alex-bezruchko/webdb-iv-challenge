@@ -13,8 +13,8 @@ function getById(id) {
     return db('recipes').where({id}).first();
 }
 
-function insert(cohort) {
-    return db('recipes').insert(cohort).then(ids => {
+function insert(recipe) {
+    return db('recipes').insert(recipe).then(ids => {
         return getById(ids[0])
     })
 }
